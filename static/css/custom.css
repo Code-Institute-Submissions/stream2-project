@@ -24,7 +24,7 @@
    vertical-align: middle;
    text-align: center;
    padding-top: 12px;
-   padding-bottom: 0px;
+   padding-bottom: 1px;
 }
 
 #net-donations {
@@ -37,7 +37,7 @@
    vertical-align: middle;
    text-align: center;
    padding-top: 12px;
-   padding-bottom: 0px;
+   padding-bottom: 1px;
 }
 
 
@@ -52,6 +52,6 @@
    vertical-align: middle;
    text-align: center;
    padding-top: 4px;
-   padding-bottom: 0px;
+   padding-bottom: 1px;
 
 }
