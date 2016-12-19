@@ -2,13 +2,16 @@ from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
 import json
+import os
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'donorsUSA'
+#MONGODB_HOST = 'ds135798.mlab.com'
+#MONGODB_PORT = 35798
+MONGODB_URI = os.getenv('MONGODB_URI')
 COLLECTION_NAME = 'projects'
+DBS_NAME = 'heroku_hsp90fx4'
+
 FIELDS = {'funding_status': True, 'school_state': True, 'resource_type': True, 'poverty_level': True,
          'date_posted': True, 'total_donations': True, '_id': False}
 
