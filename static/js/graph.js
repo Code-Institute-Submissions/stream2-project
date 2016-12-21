@@ -55,7 +55,7 @@ function makeGraphs(error, projectsJson, statesJson) {
     var totalDonations = ndx.groupAll().reduceSum(function (d) {
         return d["total_donations"];
     });
-
+fundingStatusmap
     var max_state = totalDonationsByState.top(1)[0].value;
 
     //Defining values (used in charts)
@@ -127,8 +127,8 @@ function makeGraphs(error, projectsJson, statesJson) {
         .dimension(fundingStatus)
         .group(numProjectsByFundingStatus);
 
-    fundingStatusmap.width(1000)
-        .height(395)
+    fundingStatusmap.width(500)
+        .height(330)
         .dimension(stateDim)
         .group(totalDonationsByState)
         .colors(["#E2F2FF", "#C4E4FF", "#9ED2FF", "#81C5FF", "#6BBAFF", "#51AEFF", "#36A2FF", "#1E96FF", "#0089FF", "#7C151D"])
@@ -145,7 +145,7 @@ function makeGraphs(error, projectsJson, statesJson) {
                 + "Total Donations: " + Math.round(p["value"]) + " $";
         });
       // Scaterplot input data and graph
-    var data1 = "x,y,z\n" +
+    var data2 = "x,y,z\n" +
         "1,1,3\n" +
         "5,2,11\n" +
         "13,13,13\n" +
