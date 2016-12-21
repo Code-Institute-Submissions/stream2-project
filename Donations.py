@@ -6,8 +6,8 @@ import os
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'ds135798.mlab.com'
-MONGODB_PORT = 35798
+#MONGODB_HOST = 'ds135798.mlab.com'
+#MONGODB_PORT = 35798
 MONGODB_URI = os.getenv('MONGODB_URI')
 COLLECTION_NAME = 'project'
 DBS_NAME = 'heroku_hsp90fx4'
